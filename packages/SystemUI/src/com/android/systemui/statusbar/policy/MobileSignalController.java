@@ -350,7 +350,6 @@ public class MobileSignalController extends SignalController<
         int resId = 0;
 
         if ( mCurrentState.imsResitered && mVoLTEicon ) {
-        if ( mCurrentState.imsResitered ) {
             resId = R.drawable.ic_volte;
         }
         return resId;
