@@ -1,3 +1,4 @@
+
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
@@ -40,6 +41,7 @@ import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.NightDisplayTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
 import com.android.systemui.qs.tiles.UserTile;
+import com.android.systemui.qs.tiles.CaffeineTile;
 import com.android.systemui.qs.tiles.WifiTile;
 import com.android.systemui.qs.tiles.WorkModeTile;
 import com.android.systemui.qs.QSTileHost;
@@ -101,6 +103,10 @@ public class QSFactoryImpl implements QSFactory {
                 return new NfcTile(mHost);
             case "heads_up":
                 return new HeadsUpTile(mHost);
+            case "caffeine":
+                return new CaffeineTile(mHost);
+//            case "nowplaying":
+//               return new AmbientPlayTile(mHost);
         }
 
         // Intent tiles.
